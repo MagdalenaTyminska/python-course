@@ -1,8 +1,10 @@
-#tuple - nie można modyfikować (żeby dostać się do wybranych elementów)
-for item in author.items():
-    # print(item)
-    print(item[0], item[1])
+# dictionaries
+author = {
+    'first_name': 'Zofia',
+    'last_name': 'Nałkowska'
+}
 
-# lub
-# for first_name, last_name in author.items():
-#     print(first_name, last_name)
+for item in author:
+    print(item, author[item])
+
+author.items(), author.keys(), author.values()

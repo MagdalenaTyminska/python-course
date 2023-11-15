@@ -1,15 +1,8 @@
-#set - nie sortują się i nie przyjmują duplikatów
-first_names = set()
+#tuple - nie można modyfikować (żeby dostać się do wybranych elementów)
+for item in author.items():
+    # print(item)
+    print(item[0], item[1])
 
-first_names.add('Michał')
-first_names.add('Ania')
-
-
-team_a = {'Wojtek', 'Ania', 'Rafał'}
-team_b = {'Paweł', 'Ola', 'Tosia'}
-
-print('Sum', team_a | team_b),
-print('Intersection', team_a & team_b)
-print('Symmetric difference', team_a ^ team_b)
-print('A - B', team_a - team_b)
-print('B - A', team_b - team_a)
+# lub
+# for first_name, last_name in author.items():
+#     print(first_name, last_name)
