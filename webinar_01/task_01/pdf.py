@@ -15,5 +15,21 @@ string = '''<table>
     </body>
 </table>'''
 
+stylesheet = '''
+    body {
+        font-family: sans-serif;
+    }
+    thread tr {
+        border-bottom: 3px solid black;
+    }
+    tbody td {
+        border-bottom: 1px solid black;
+    }
+    tbody tr td {
+        padding-bottom: 5px;
+    }
+'''
+
 html = HTML(string=string)
-html.write_pdf('test.pdf')
+css = CSS(string=stylesheet)
+html.write_pdf('test.pdf', stylesheets=[css])
