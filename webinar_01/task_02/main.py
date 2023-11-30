@@ -1,8 +1,8 @@
 # Nie restartuje przy zmianach:
-# flask --app main run
+# flask --app main run --host=0.0.0.0
 
 # Restart przy zmianie
-# flask --app main --debug run
+# flask --app main --debug run --host=0.0.0.0
 
 from flask import Flask, render_template
 
